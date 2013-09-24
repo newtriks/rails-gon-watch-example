@@ -19,4 +19,8 @@ This is an example project which will create a [Zencoder](http://zencoder.com) j
 ## Testing Zencoder
 
 1. Install the [zencoder-fetcher](http://goo.gl/i1tKI4) gem
-2. Run the following in Terminal: `zencoder_fetcher your-zencoder-account-api-key --count 1 --url http://your-auth-name:your-auth-secret@localhost:3000/api/zencoder/processed`
+2. Run the following in Terminal: 
+ 
+ `zencoder_fetcher your-zencoder-account-api-key --count 1 --url http://your-auth-name:your-auth-secret@localhost:3000/api/zencoder/processed`
+
+![Image](https://f.cloud.github.com/assets/31971/1201719/650f1a4c-2539-11e3-950b-1583e4d0aace.png)
