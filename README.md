@@ -9,10 +9,10 @@ This is an example project which will create a [Zencoder](http://zencoder.com) j
 3. bundle install
 4. Add your own .env file with the following:
 
-	ZENCODER_API_KEY: your-zencoder-account-api-key
-	NOTIFICATION_AUTH_NAME: your-auth-name
-	NOTIFICATION_AUTH_PASSWORD: your-auth-secret
-	PROCESSED_WEBHOOK: http://zencoderfetcher/api/zencoder/processed
+		ZENCODER_API_KEY: your-zencoder-account-api-key
+		NOTIFICATION_AUTH_NAME: your-auth-name
+		NOTIFICATION_AUTH_PASSWORD: your-auth-secret
+		PROCESSED_WEBHOOK: http://zencoderfetcher/api/zencoder/processed
 
 5. rails s
 
