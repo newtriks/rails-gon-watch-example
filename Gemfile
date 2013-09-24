@@ -15,6 +15,7 @@ end
 group :development do
   gem 'thin'
   gem 'dotenv-rails'
+  gem 'quiet_assets'
 end
 
 gem 'jquery-rails'
