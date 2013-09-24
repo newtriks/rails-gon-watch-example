@@ -1,0 +1,37 @@
+<div class="row">
+  <h4 class="subheader">Jobs List</h4>
+  <% if @jobs.count > 0 %>
+    <table>
+      <thead>
+        <tr>
+          <th width="100">ID</th>
+          <th width="300">Processed</th>
+          <th width="150"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @jobs.each do |job| %>
+          <tr>
+            <td><%= job.zencoder_job_id %></td>
+            <td id="td_<%= job.zencoder_job_id %>"><%= job.processed_label %></td>
+            <td class="job-list-buttons">
+              <%= link_to 'Show', job, :class => "small button" %>
+              <%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' }, :class => "small button" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% else %>
+  <div data-alert class="alert-box secondary">
+    <b>No jobs created.</b>
+  </div>
+  <% end %>
+  <br />
+  <%= link_to 'New Job', new_job_path, class: "button radius" %>
+</div>
+
+
+
+
+

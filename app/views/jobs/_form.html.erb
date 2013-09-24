@@ -1,0 +1,20 @@
+<%= form_for(@job) do |f| %>
+  <% if @job.errors.any? %>
+    <div id="error_explanation">
+      <h4 class="subheader"><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h4>
+
+      <ul>
+      <% @job.errors.full_messages.each do |msg| %>
+        <li data-alert class="alert-box alert"><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="large-12 columns panel">
+    <p>This will create a new Zencoder job passing <b>/api/zencoder/processed</b> as the webhook for notifications. If running on localhost use the <a href="http://goo.gl/i1tKI4" target="_blank">zencoder-fetcher</a> to trigger the webhook. The zencoder <b>notifications</b> callback will update the newly created job processed value. </p>
+    <%= f.submit class: "button radius" %>
+  </div>
+
+<% end %>

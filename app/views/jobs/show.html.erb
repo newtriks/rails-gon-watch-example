@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+<ul class="pricing-table">
+  <li class="title">Job: <%= @job.zencoder_job_id %></li>
+  <li class="bullet-item" id="<%= @job.zencoder_job_id %>"><%= @job.processed_label %></li>
+  <li class="cta-button"><%= link_to 'Edit', edit_job_path(@job), :class => 'small button' %><%= link_to 'Back', jobs_path, :class => 'small button' %></li>
+</ul>
