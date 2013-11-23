@@ -65,9 +65,7 @@ class JobsController < ApplicationController
     end
 
     def exposeUnProcessedJobToJavascript
-      if(!@job.processed)
-        gon.watch.job = @job.zencoder_job_id
-      end
+      gon.watch.job = @job
     end
 
     def exposeUnProcessedJobsToJavascript

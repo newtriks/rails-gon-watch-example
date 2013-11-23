@@ -19,7 +19,7 @@ function addJobWatchers() {
 function updateProcessingJob(job) {
 	if (job.processed) {
 		gon.unwatch('job', updateProcessingJob);
-		updateDocumentStatus(job);
+		updateDocumentStatus(job.zencoder_job_id);
 	}
 }
 
